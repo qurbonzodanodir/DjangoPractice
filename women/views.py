@@ -5,21 +5,17 @@ from django.template.loader import render_to_string
 
 menu = ["About us", "Add article", "Feedback", "Login", "Logout"]
 
-class MyClass:
-    def __init__(self,a,b):
-        self.a = a
-        self.b = b
-
+data_db =[
+    {"id":1, "title":'Анджеллина Джоли', 'content':'Биография', 'is_published':True},
+    {"id":2, "title":'Марго Робби', 'content':'Биография', 'is_published':False},
+    {"id":3, "title":'Джулия Робертс', 'content':'Биография', 'is_published':True}
+]
 
 def index(request):
     data = {
         'title':'Home Page',
         'menu': menu,
-        'float':28.54,
-        'lst':[1,2,3,'abc',True],
-        'set':{1,2,3,4,5},
-        'dict':{'name':'Vlad', 'age': 25},
-        'obj': MyClass(10, 20),
+        'posts': data_db,
         }
     return render(request,'women/index.html',context=data)
 
