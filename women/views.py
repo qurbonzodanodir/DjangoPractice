@@ -10,7 +10,8 @@ data_db =[
     {"id":2, "title":'Марго Робби', 'content':'Биография', 'is_published':False},
     {"id":3, "title":'Джулия Робертс', 'content':'Биография', 'is_published':True},
     {"id":4, "title":'Jim Carey', 'content':'Биография', 'is_published':True},
-    {"id":5, "title":'Tom Cruise', 'content':'Биография', 'is_published':True}
+    {"id":5, "title":'Tom Cruise', 'content':'Биография', 'is_published':True},
+    {"id":6, "title":'Meryl Streep', 'content':'Биография', 'is_published':True},
 ]
 
 def index(request):
